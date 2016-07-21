@@ -58,6 +58,13 @@ namespace ExerciseResolve
                 retSb.Insert(0, valueUnit);
             }while(number/tenPow > 0);
 
+            retSb.Insert(0, " ");
+            retSb.Insert(0, "có:");
+            retSb.Insert(0, " ");
+            retSb.Insert(0, number);
+            retSb.Insert(0, " ");
+            retSb.Insert(0, "Số");
+
             return retSb.ToString();
         }
 
