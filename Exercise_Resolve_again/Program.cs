@@ -9,6 +9,9 @@ namespace ExerciseResolve
     {
         static void Main(string[] args)
         {
+            int num = 153;
+            Ex001_InformationOfNumber infoNum = new Ex001_InformationOfNumber(num);
+            Console.WriteLine(infoNum.ToString());
         }
     }
 }
