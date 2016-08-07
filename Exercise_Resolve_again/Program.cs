@@ -38,6 +38,9 @@ namespace ExerciseResolve
             ExerciseString.upperCharacterStartWord(ref strShow);
             Console.WriteLine(strShow);
 
+            ExerciseString.upperAndLowerCharacterAlternate(ref strShow);
+            Console.WriteLine(strShow);
+
             Console.ReadKey();
 
         }

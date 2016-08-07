@@ -62,5 +62,22 @@ namespace ResolveExerciseString
             str = String.Join(" ", strSplit);
         }
 
+        public static void upperAndLowerCharacterAlternate(ref string str)
+        {
+            string[] strSplit = str.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            bool isOdd = false;
+            for (int i = 0; i < strSplit.Length; ++i)
+            {
+                char[] arrStrSplitE = strSplit[i].ToCharArray();
+                for (int j = 0; j < arrStrSplitE.Length; ++j)
+                {
+                    arrStrSplitE[j] = isOdd ? char.ToUpper(arrStrSplitE[j]) : char.ToLower(arrStrSplitE[j]);
+                    isOdd = !isOdd;
+                }
+                strSplit[i] = new string(arrStrSplitE);
+            }
+            str = String.Join(" ", strSplit);
+        }
+
     }
 }
