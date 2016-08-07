@@ -26,6 +26,8 @@ namespace ExerciseResolve
             Console.WriteLine(strShow);
             ExerciseString.removeSpaceReduntion(ref strShow);
             Console.WriteLine(strShow);
+            ExerciseString.concatString(ref strShow, "abc");
+            Console.WriteLine(strShow);
 
             Console.ReadKey();
 

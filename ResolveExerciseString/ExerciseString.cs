@@ -34,5 +34,11 @@ namespace ResolveExerciseString
                 str = string.Join(" ", strSplit);
             }
         }
+
+        public static void concatString(ref string strDestination, string strAppend)
+        {
+            strDestination = String.Concat(strDestination, strAppend);
+        }
+
     }
 }
