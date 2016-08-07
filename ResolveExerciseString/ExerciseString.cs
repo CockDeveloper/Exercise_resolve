@@ -55,10 +55,9 @@ namespace ResolveExerciseString
             string[] strSplit = str.Split(new char[]{' '}, StringSplitOptions.RemoveEmptyEntries);
             for (int i = 0; i<strSplit.Length; ++i)
             {
-                string tem = new string(new char[]{strSplit[i][0]});
-                tem = tem.ToUpper();
-                strSplit[i] = strSplit[i].Remove(0, 1);
-                strSplit[i] = strSplit[i].Insert(0, tem);
+                char[] arrStrSplitE = strSplit[i].ToCharArray();
+                arrStrSplitE[0] = char.ToUpper(arrStrSplitE[0]);
+                strSplit[i] = new string(arrStrSplitE);
             }
             str = String.Join(" ", strSplit);
         }
