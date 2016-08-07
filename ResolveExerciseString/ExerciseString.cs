@@ -24,5 +24,15 @@ namespace ResolveExerciseString
 
             return countSpace;
         }
+
+        public static void removeSpaceReduntion(ref string str)
+        {
+            if (!string.IsNullOrEmpty(str))
+            {
+                str = str.Trim();
+                string[] strSplit = str.Split(new char[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries);
+                str = string.Join(" ", strSplit);
+            }
+        }
     }
 }

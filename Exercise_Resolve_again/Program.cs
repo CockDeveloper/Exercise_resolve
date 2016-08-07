@@ -22,7 +22,11 @@ namespace ExerciseResolve
             dynamic dynAuthor = new Author();
             Console.WriteLine(dynAuthor.FullNameMethod(lastName));
 
-            Console.WriteLine("Space of string: {0}", ExerciseString.nbOfSpace(infoNum.ToString()));
+            string strShow = String.Format("    Space     of     string:     {0}    ", ExerciseString.nbOfSpace(infoNum.ToString()));
+            Console.WriteLine(strShow);
+            ExerciseString.removeSpaceReduntion(ref strShow);
+            Console.WriteLine(strShow);
+
             Console.ReadKey();
 
         }
