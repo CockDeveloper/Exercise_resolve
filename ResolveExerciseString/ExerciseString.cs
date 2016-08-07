@@ -50,5 +50,18 @@ namespace ResolveExerciseString
             str = str.ToLower();
         }
 
+        public static void upperCharacterStartWord(ref string str)
+        {
+            string[] strSplit = str.Split(new char[]{' '}, StringSplitOptions.RemoveEmptyEntries);
+            for (int i = 0; i<strSplit.Length; ++i)
+            {
+                string tem = new string(new char[]{strSplit[i][0]});
+                stringUpper(ref tem);
+                strSplit[i] = strSplit[i].Remove(0, 1);
+                strSplit[i] = strSplit[i].Insert(0, tem);
+            }
+            str = String.Join(" ", strSplit);
+        }
+
     }
 }

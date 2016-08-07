@@ -32,7 +32,10 @@ namespace ExerciseResolve
             ExerciseString.stringLower(ref strShow);
             Console.WriteLine(strShow);
 
-            ExerciseString.stringUpper(ref strShow);
+            //ExerciseString.stringUpper(ref strShow);
+            //Console.WriteLine(strShow);
+
+            ExerciseString.upperCharacterStartWord(ref strShow);
             Console.WriteLine(strShow);
 
             Console.ReadKey();
