@@ -56,7 +56,7 @@ namespace ResolveExerciseString
             for (int i = 0; i<strSplit.Length; ++i)
             {
                 string tem = new string(new char[]{strSplit[i][0]});
-                stringUpper(ref tem);
+                tem = tem.ToUpper();
                 strSplit[i] = strSplit[i].Remove(0, 1);
                 strSplit[i] = strSplit[i].Insert(0, tem);
             }
