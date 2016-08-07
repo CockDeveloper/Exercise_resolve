@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+using ResolveExerciseString;
+
 namespace ExerciseResolve
 {
     class Program
@@ -19,7 +21,10 @@ namespace ExerciseResolve
             dynamic lastName = "Chand";
             dynamic dynAuthor = new Author();
             Console.WriteLine(dynAuthor.FullNameMethod(lastName));
+
+            Console.WriteLine("Space of string: {0}", ExerciseString.nbOfSpace(infoNum.ToString()));
             Console.ReadKey();
+
         }
 
         public class Author
