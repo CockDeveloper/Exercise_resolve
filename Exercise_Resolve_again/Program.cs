@@ -29,6 +29,12 @@ namespace ExerciseResolve
             ExerciseString.concatString(ref strShow, "abc");
             Console.WriteLine(strShow);
 
+            ExerciseString.stringLower(ref strShow);
+            Console.WriteLine(strShow);
+
+            ExerciseString.stringUpper(ref strShow);
+            Console.WriteLine(strShow);
+
             Console.ReadKey();
 
         }
@@ -46,6 +52,6 @@ namespace ExerciseResolve
                 dynamic firstname = name;
                 return firstname + " " + d;
             }
-        }  
+        }
     }
 }

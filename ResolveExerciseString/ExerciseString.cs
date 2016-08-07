@@ -40,5 +40,15 @@ namespace ResolveExerciseString
             strDestination = String.Concat(strDestination, strAppend);
         }
 
+        public static void stringUpper(ref string str)
+        {
+            str = str.ToUpper();
+        }
+
+        public static void stringLower(ref string str)
+        {
+            str = str.ToLower();
+        }
+
     }
 }
